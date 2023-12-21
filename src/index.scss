@@ -1,0 +1,19 @@
+:root {
+  font-family: 'Manrope', sans-serif;
+
+  --c-bg: #ECF2F8;
+  --c-bg-card: #FFFFFF;
+  --c-title: #48556A;
+  --c-subtitle: #9DAEC2;
+  --c-description: rgb(109, 127, 151);
+  --c-shadow: rgba(201, 213, 225, 0.50);
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: var(--c-bg);
+}
