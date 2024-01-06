@@ -13,7 +13,7 @@ const previewArticles = [
 ]
 
 export function ArticlePreview() {
-    const [isShown, setIsShown] = useState(true);
+    const [isShown, setIsShown] = useState(false);
 
     return (
         <>
@@ -41,14 +41,18 @@ export function ArticlePreview() {
                                             </svg>
                                         </button>
                                         {isShown && (
-                                            <div className="article__overlay">
-                                                <p className="article__label">share</p>
-                                                <div className="article__icons">
-                                                    <img src="/img/icon-facebook.svg" alt="icon facebook" />
-                                                    <img src="/img/icon-twitter.svg" alt="icon twitter"/>
-                                                    <img src="/img/icon-pinterest.svg" alt="icon pinterest"/>
+                                            <>
+                                                <div className="article__overlay">
+                                                    <p className="article__label">share</p>
+                                                    <div className="article__icons">
+                                                        <img src="/img/icon-facebook.svg" alt="icon facebook" />
+                                                        <img src="/img/icon-twitter.svg" alt="icon twitter"/>
+                                                        <img src="/img/icon-pinterest.svg" alt="icon pinterest"/>
+                                                    </div>
                                                 </div>
-                                            </div>
+                                                <img src="" alt="" />
+                                            </>
+                                            
                                         )}
                                     </div>
                                 </div>
